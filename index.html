@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="stopwatch-container">
+        <div class="stopwatch">
+          <table>
+            <tr>
+              <td class="display-stopwatch" id="hour-hand">00</td>
+              <td rowspan="2" class="display-stopwatch">:</td>
+              <td class="display-stopwatch" id="minute-hand">00</td>
+              <td rowspan="2" class="display-stopwatch">:</td>
+              <td class="display-stopwatch" id="second-hand">00</td>
+              <td rowspan="2" class="display-stopwatch">:</td>
+              <td class="display-stopwatch" id="millisecond-hand">00</td>
+            </tr>
+            <tr>
+              <th class="display-header">Hours</th>
+              <th class="display-header">Minutes</th>
+              <th class="display-header">Seconds</th>
+              <th class="display-header">Milliseconds</th>
+            </tr>
+          </table>
+        </div>
+        <div class="stopwatch-buttons">
+          <button type="button" class="button start-button">Start</button>
+          <button type="button" class="button stop-button">Stop</button>
+          <button type="button" class="button reset-button">Reset</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="copyright-information">
+        &copy; 2024 <span class="brand-name">Barshapa Pvt. Ltd.</span> &mdash;
+        All rights reserved
+      </p>
+      <p class="author-information">
+        Created by &mdash; <strong> Amit Shaw</strong>
+      </p>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
